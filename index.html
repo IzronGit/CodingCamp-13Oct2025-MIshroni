@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="todo-container">
+            <h2>Todo List</h2>
+            
+            <div class="input-section">
+                <input type="text" id="todoInput" placeholder="Add a todo...">
+                <input type="date" id="dateInput">
+                <button id="addBtn">+</button>
+            </div>
+            
+            <div class="controls">
+                <button id="filterBtn">FILTER</button>
+                <button id="deleteAllBtn">DELETE ALL</button>
+            </div>
+            
+            <div class="todo-list">
+                <div class="header-row">
+                    <div class="column">TASK</div>
+                    <div class="column">DUE DATE</div>
+                    <div class="column">STATUS</div>
+                    <div class="column">ACTIONS</div>
+                </div>
+                <div id="todoItems" class="items-container">
+                    <div class="no-tasks">No task found</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
